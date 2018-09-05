@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: edge-server
+  profiles:
+    active: development
+  cloud:
+    config:
+      uri: http://localhost:8888
+      label: master
+      username: root
+      password: '{cipher}bd311fe26a68d58705358bcf68bfa359eb6d3f24b47ebee2f71d4231a8f31499'
+      fail-fast: true
+
+encrypt:
+  failOnError: false
+  key: aeiou
